@@ -1,0 +1,197 @@
+*{
+
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+
+body{
+
+    font-family: "Overlock SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin:0;
+
+
+}
+
+
+header{
+
+width:100%;
+display:flex;
+justify-content: space-around;
+align-items: center;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+
+
+
+}
+
+
+.conjuntoTitulo{
+    font-family: "Zen Tokyo Zoo", system-ui;
+    font-weight: 50;
+    font-style: normal;
+display:flex;
+flex-direction: row;
+gap:20px;
+}
+
+.conjuntoTitulo img{
+
+width: 85px;
+}
+
+
+nav ul{
+
+    display:flex;
+    gap:20px;
+
+}
+
+nav ul li{
+
+    list-style: none;
+}
+
+nav ul li a{
+
+    text-decoration: none;
+    font-weight: bolder;
+    color:rgb(255, 223, 43);
+}
+
+
+nav ul li a:hover{
+
+    color: rgb(0, 56, 147);
+}
+
+/* Quienes somos main */
+
+
+.contenido {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    margin:70px 30px 30px 30px;
+}
+
+.contenido img {
+
+width: 40%;
+border-radius: 10px;
+
+}
+
+
+.texto-contenido h3{
+
+color:rgb(255, 223, 43);
+
+}
+
+.texto-contenido p{
+max-width: 300px;
+text-align: justify;
+
+}
+
+/* download main */
+
+
+.download{
+
+width:100%;
+max-height: 400px;
+min-height: 200px;
+background-color: rgb(0, 56, 147);
+align-content: center;
+
+}
+
+
+.contenido-download{
+display:flex;
+flex-direction:row;
+justify-content: space-around;
+align-items: center;
+
+}
+
+.explicacion-download p{
+
+color:whitesmoke;
+max-width: 400px;
+text-align: justify;
+
+}
+
+
+.btn-download{
+color:whitesmoke;
+display:flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+
+
+}
+
+
+
+
+.btn-download a{
+ text-decoration: none;
+ color:whitesmoke;
+ font-weight: bold;
+ background-color: rgb(255, 223, 43);
+ padding: 20px 40px;
+ border-radius: 7px;
+transition: background-color ease 0.3;
+    
+}
+
+    
+    
+.titulo-descarga img{
+    width:30%;
+    
+}
+
+.btn-download a:hover{
+    background-color:rgb(189, 162, 7); ;
+       
+}
+
+
+/* foote  */
+
+
+.footer {
+    background-color: rgb(0, 56, 147);
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+
+  }
+  
+  .footer a {
+    color: whitesmoke;
+    text-decoration: underline;
+  }
+  
+  .footer a:hover {
+    color: #ffdf2b;
+  }
+  
