@@ -65,13 +65,13 @@ nav ul li a{
 
     text-decoration: none;
     font-weight: bolder;
-    color:rgb(255, 223, 43);
+    color: rgb(0, 56, 147);
 }
 
 
 nav ul li a:hover{
 
-    color: rgb(0, 56, 147);
+    color: rgb(255, 223, 43);
 }
 
 /* Quienes somos main */
@@ -97,7 +97,7 @@ border-radius: 10px;
 
 .texto-contenido h3{
 
-color:rgb(255, 223, 43);
+color:rgb(0, 56, 147);
 
 }
 
@@ -107,6 +107,78 @@ text-align: justify;
 
 }
 
+/* contenido IA */
+
+.IA{
+width:100%;
+max-height: 600px;
+background-color:#ffdf2b;
+
+}
+
+.contenido-IA{
+
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+color:rgb(52, 38, 0);
+}
+
+
+
+
+
+.contenido-texto-IA P{
+max-width: 500px;
+text-align: justify;
+
+
+}
+
+
+
+.img-IA{
+padding: 10px;
+
+}
+
+.img-IA img{
+object-fit: cover;
+width: 200px;
+border-radius: 7px;
+box-shadow: 10px 5px rgba(120, 88, 0, 0.9);
+}
+
+
+
+/* beneficios */
+
+.beneficios{
+
+    width:100%;
+    background-color: rgba(143, 143, 143, 0.557);
+    padding:100px;
+}
+
+
+.contenido-beneficios{
+
+    display:flex;
+    flex-direction: row;
+    gap:15%;
+}
+
+.targeta{
+background-color: rgba(114, 114, 114, 0.338);
+padding:30px 20px 20px;
+text-align: center;
+border-radius: 5px ;
+box-shadow: 5px 5px rgba(65, 65, 65, 0.728);
+}
+
+
 /* download main */
 
 
@@ -115,7 +187,7 @@ text-align: justify;
 width:100%;
 max-height: 400px;
 min-height: 200px;
-background-color: rgb(0, 56, 147);
+background-color: rgb(0, 34, 88);
 align-content: center;
 
 }
@@ -153,10 +225,10 @@ align-items: center;
 
 .btn-download a{
  text-decoration: none;
- color:whitesmoke;
+ color:rgb(0, 34, 88);
  font-weight: bold;
- background-color: rgb(255, 223, 43);
- padding: 20px 40px;
+ background-color: rgb(224, 192, 9);
+ padding: 15px 30px;
  border-radius: 7px;
 transition: background-color ease 0.3;
     
@@ -179,7 +251,7 @@ transition: background-color ease 0.3;
 
 
 .footer {
-    background-color: rgb(0, 56, 147);
+    background-color: rgb(0, 34, 88);
     color: whitesmoke;
     text-align: center;
     padding: 20px;
