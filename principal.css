@@ -22,13 +22,15 @@ body{
 
 
 header{
-
+position: sticky;
+top:0;
 width:100%;
 display:flex;
 justify-content: space-around;
 align-items: center;
 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-
+background-color: white;
+ z-index:10000;
 
 
 }
@@ -74,6 +76,98 @@ nav ul li a:hover{
     color: rgb(255, 223, 43);
 }
 
+
+
+
+#abrir{
+display:none;
+text-decoration: none;
+border: 0px;
+background-color: whitesmoke;
+font-size: xx-large;
+
+}
+
+
+#cerrar{
+    display: none;
+width: 30px;
+border: 0px;
+background-color: #ffdf2b;
+
+
+
+}
+
+ 
+@media(max-width:830px){
+
+
+    #nav_bar{   
+        display:none;
+
+             
+    }
+    
+    #abrir{
+        display:block;
+        z-index:900;
+    
+    }
+
+
+    #nav_bar.visible{
+        display:block;
+        position: fixed;
+        top:120px;
+        right: 10%;
+        height: 250px;
+        width:40%;
+        background-color:#ffdf2b;
+        border-radius: 5px;
+        padding:20px;
+
+
+
+    }
+
+    #nav_bar .menu{
+
+        flex-direction: column;
+        align-items: end;
+        z-index: 3000;
+
+    }
+
+
+    #cerrar{
+        display: block;
+     }
+
+}
+
+
+@media(max-width:600px){
+    
+    #nav_bar{
+
+        width: 40%;
+        z-index: 3000;
+
+    }
+
+
+    nav ul li a{
+        font-size: x-small;
+        z-index: 1000;
+    }
+ }
+
+
+
+
+
+
 /* Quienes somos main */
 
 
@@ -106,6 +200,30 @@ max-width: 300px;
 text-align: justify;
 
 }
+
+
+
+
+@media(max-width:830px){
+
+.contenido{
+flex-direction: column;
+z-index: 2000;
+
+}
+
+.contenido img {
+
+    width: 60%;
+    border-radius: 10px;
+    
+    }
+}
+
+
+
+
+
 
 /* contenido IA */
 
@@ -151,14 +269,44 @@ border-radius: 7px;
 box-shadow: 10px 5px rgba(120, 88, 0, 0.9);
 }
 
+@media(max-width:830px){
 
+
+
+    .IA{
+        max-height: 700px;
+        z-index: 200;
+    }        
+
+    .contenido-IA{
+    flex-direction: column;
+    z-index: 2000;
+    
+    }
+
+    .contenido-texto-IA P,
+    .contenido-texto-IA h4{
+        max-width: 300px;
+        margin: 20px auto;
+        text-align: justify;
+        
+        
+        }
+
+        .contenido-texto-IA h3{
+            text-align: center;
+
+        }
+
+        
+    }
 
 /* beneficios */
 
 .beneficios{
 
     width:100%;
-    background-color: rgba(143, 143, 143, 0.557);
+    background-color: #f9f9f9;
     padding:100px;
 }
 
@@ -167,16 +315,37 @@ box-shadow: 10px 5px rgba(120, 88, 0, 0.9);
 
     display:flex;
     flex-direction: row;
-    gap:15%;
+    gap:20%;
 }
 
 .targeta{
-background-color: rgba(114, 114, 114, 0.338);
+background-color:#ffdf2b;
 padding:30px 20px 20px;
 text-align: center;
 border-radius: 5px ;
 box-shadow: 5px 5px rgba(65, 65, 65, 0.728);
 }
+
+
+
+/* resposive */
+
+@media(max-width:1200px) {
+    
+.contenido-beneficios{
+    flex-direction: column;
+    z-index: 1000;
+
+}
+
+.targeta{
+
+    margin-top: 20px;
+    z-index: 2000;
+
+}
+
+ }
 
 
 /* download main */
@@ -242,8 +411,36 @@ transition: background-color ease 0.3;
 }
 
 .btn-download a:hover{
-    background-color:rgb(189, 162, 7); ;
+    background-color:rgb(189, 162, 7); 
        
+}
+
+
+
+
+@media(max-width:830px){
+
+
+
+
+    .download{
+        max-height: 600px;
+        z-index: 500;
+    }
+    .contenido-download{
+
+        flex-direction: column;
+        z-index: 500;
+
+    }
+
+    .explicacion-download p{
+        max-width: 300px;
+        z-index: 500;
+
+    }
+
+
 }
 
 
